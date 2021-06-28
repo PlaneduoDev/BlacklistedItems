@@ -1,0 +1,5 @@
+main: me.planeduo.blacklist.Main
+name: BlacklistedItems
+author: Planeduo
+version: 1.0
+api-version: 1.13
