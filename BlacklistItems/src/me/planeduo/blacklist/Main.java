@@ -30,7 +30,10 @@ public class Main extends JavaPlugin implements Listener{
 	
 	@EventHandler
 	public void interation(PlayerInteractEvent event) {
-		if (items.contains(event.getItem())) {
+		ItemStack item = event.getItem();
+		item.setAmount(1);
+		if (items.contains(item)) {
+			
 			event.setCancelled(true);
 			return;
 		}
